@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista.LoginCompany">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ApparCompany"
+                android:layout_marginBottom="30dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#2196F3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/d1"
+                android:textAllCaps="false"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/texto1"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/ver3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/d2"
+                android:textAllCaps="false"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/texto3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/pass"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/boton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:onClick="logIn"
+                android:text="@string/log" />
+
+            <Button
+                android:id="@+id/boton4"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/recordar"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/boton5"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="registrar"
+                android:text="@string/signup"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
